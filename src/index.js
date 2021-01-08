@@ -57,15 +57,37 @@ function changeColor(event){
 dropdown.addEventListener("change", function(e){
   const letter = e.target.value
 
-  const filteredBreeds = breeds.filter(function(breed) {
+  const filteredBreeds = breeds.filter(function(breed){
     return breed.startsWith(letter)
   })
 
-  breedContainer.innerText = ""
+  breedContainer.innerHTML = ""
 
   createBreedList(filteredBreeds);
-  
 })
+
+
+
+
+
+
+
+
+
+
+
+// dropdown.addEventListener("change", function(e){
+//   const letter = e.target.value
+
+//   const filteredBreeds = breeds.filter(function(breed) {
+//     return breed.startsWith(letter)
+//   })
+
+//   breedContainer.innerText = ""
+
+//   createBreedList(filteredBreeds);
+  
+// })
 
 
 
